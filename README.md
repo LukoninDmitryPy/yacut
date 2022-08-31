@@ -40,5 +40,11 @@ python3 -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+### Запуск проекта:
+
+```
+flask run
+```
+
 ## Над проектом работал
 - [Дмитрий Луконин](https://wa.me/79153612056)
