@@ -1,6 +1,5 @@
-from http.client import NOT_FOUND, OK
+from http.client import OK
 from flask import redirect, render_template
-from http import HTTPStatus
 
 from . import app, db
 from .forms import URLForm
@@ -20,7 +19,7 @@ def index_view():
     )
     db.session.add(url_map)
     db.session.commit()
-    return render_template('index.html', form=form, short=short), HTTPStatus.OK
+    return render_template('index.html', form=form, short=short), OK
 
 
 @app.route('/<string:short>')
